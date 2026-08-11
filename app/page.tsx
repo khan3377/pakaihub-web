@@ -606,9 +606,32 @@ const tools = [
     </div>
 
     {/* Bottom */}
-    <div className="mt-10 border-t border-slate-800 pt-6 text-center text-sm text-gray-500">
-      © 2026 PakAIHub. All rights reserved.
-    </div>
+<div className="mt-10 border-t border-slate-800 pt-6 text-center text-sm text-gray-500">
+  <p>© 2026 PakAIHub. All rights reserved.</p>
+
+  <div className="mt-3 flex justify-center gap-5">
+    <a
+      href="/privacy"
+      className="text-gray-400 hover:text-blue-400"
+    >
+      Privacy Policy
+    </a>
+
+    <a
+      href="/terms"
+      className="text-gray-400 hover:text-blue-400"
+    >
+      Terms & Conditions
+    </a>
+
+    <a
+      href="/contact"
+      className="text-gray-400 hover:text-blue-400"
+    >
+      Contact Us
+    </a>
+  </div>
+</div>
 
   </div>
 </footer>

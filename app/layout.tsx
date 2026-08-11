@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   ],
 
   authors: [{ name: "PakAIHub" }],
-
   creator: "PakAIHub",
 
   verification: {

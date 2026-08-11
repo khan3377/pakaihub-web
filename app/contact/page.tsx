@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact PakAIHub",
+  description:
+    "Contact PakAIHub for questions, feedback, or suggestions about AI tools and our AI tools directory.",
+};
+
 export default function Contact() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-300">
@@ -22,7 +30,7 @@ export default function Contact() {
           </p>
 
           <a
-           href="mailto:mahtaballi789@gmail.com"
+            href="mailto:mahtaballi789@gmail.com"
             className="inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
           >
             Email Us

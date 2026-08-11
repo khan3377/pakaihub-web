@@ -9,43 +9,50 @@ export const metadata: Metadata = {
 const tools = [
   {
     name: "ChatGPT",
-    description: "AI assistant for writing, learning, coding, and everyday tasks.",
+    description:
+      "AI assistant for writing, learning, coding, and everyday tasks.",
     category: "Chatbot",
     link: "https://chatgpt.com",
   },
   {
     name: "Google Gemini",
-    description: "AI assistant for research, writing, ideas, and productivity.",
+    description:
+      "AI assistant for research, writing, ideas, and productivity.",
     category: "Chatbot",
     link: "https://gemini.google.com",
   },
   {
     name: "Canva",
-    description: "Create designs, presentations, social posts, and visual content.",
+    description:
+      "Create designs, presentations, social posts, and visual content.",
     category: "Design",
     link: "https://www.canva.com",
   },
   {
     name: "Claude",
-    description: "AI assistant for writing, analysis, research, and coding.",
+    description:
+      "AI assistant for writing, analysis, research, and coding.",
     category: "Chatbot",
     link: "https://claude.ai",
   },
   {
     name: "CapCut",
-    description: "AI-powered video editing and creative content tools.",
+    description:
+      "AI-powered video editing and creative content tools.",
     category: "Video",
     link: "https://www.capcut.com",
   },
   {
     name: "Leonardo AI",
-    description: "Create AI-generated images and visual content.",
+    description:
+      "Create AI-generated images and visual content.",
     category: "Design",
     link: "https://leonardo.ai",
   },
   {
     name: "Perplexity",
-    description: "AI-powered search and research assistant.",
+    description:
+      "AI-powered search and research assistant.",
     category: "Research",
     link: "https://www.perplexity.ai",
   },
@@ -61,11 +68,25 @@ export default function AIToolsPage() {
           </a>
 
           <div className="flex items-center gap-6 text-sm text-slate-300">
-            <a href="/" className="hover:text-white">Home</a>
-            <a href="/ai-tools" className="text-blue-400">AI Tools</a>
-            <a href="/categories" className="hover:text-white">Categories</a>
-            <a href="/blog" className="hover:text-white">Blog</a>
-            <a href="/contact" className="hover:text-white">Contact</a>
+            <a href="/" className="hover:text-white">
+              Home
+            </a>
+
+            <a href="/ai-tools" className="text-blue-400">
+              AI Tools
+            </a>
+
+            <a href="/categories" className="hover:text-white">
+              Categories
+            </a>
+
+            <a href="/blog" className="hover:text-white">
+              Blog
+            </a>
+
+            <a href="/contact" className="hover:text-white">
+              Contact
+            </a>
           </div>
         </div>
       </nav>

@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read the PakAIHub Privacy Policy to learn how we handle information, cookies, advertising, and third-party links.",
+};
+
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-[#020617] text-white">

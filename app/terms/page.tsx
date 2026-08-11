@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Read the PakAIHub Terms & Conditions for using our AI tools directory and accessing information about third-party AI tools.",
+};
+
 export default function Terms() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-300">

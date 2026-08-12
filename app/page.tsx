@@ -213,7 +213,7 @@ const tools = [
 <section className="mx-auto max-w-6xl px-6 py-20 text-center">
 
   <div className="mb-6 inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-2 text-sm text-blue-400">
-    🇵🇰 Pakistan's AI Tools Directory
+   Pakistan's AI Hub
   </div>
 
   <h1 className="text-5xl font-extrabold sm:text-6xl lg:text-7xl">
@@ -530,7 +530,8 @@ const tools = [
         </h3>
 
         <p className="mt-3 max-w-sm text-gray-400">
-          Pakistan's AI Tools Directory. Discover useful AI tools
+         
+         Pakistan's AI Hub. Discover useful AI tools
           for students, freelancers, businesses and creators.
         </p>
       </div>
@@ -594,7 +595,7 @@ const tools = [
 
         <div className="mt-5 flex gap-3">
           <span className="rounded-full bg-slate-800 px-3 py-2">
-            🇵🇰 Pakistan
+           Pakistan's AI Hub
           </span>
 
           <span className="rounded-full bg-slate-800 px-3 py-2">

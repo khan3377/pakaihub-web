@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Metadata } from "next";
-
+import { useSearchParams } from "next/navigation";
 const tools = [
   {
     name: "ChatGPT",
@@ -160,9 +160,11 @@ const categories = [
 
 export default function AIToolsPage() {
   const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
-  const filteredTools = useMemo(() => {
+ 
+const searchParams = useSearchParams();
+const categoryFromUrl = searchParams.get("category") || "All";
+ const [selectedCategory, setSelectedCategory] = useState(categoryFromUrl);
+const filteredTools = useMemo(() => {
     const searchText = search.trim().toLowerCase();
 
     return tools.filter((tool) => {

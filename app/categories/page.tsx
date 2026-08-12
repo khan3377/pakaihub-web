@@ -8,44 +8,52 @@ export const metadata: Metadata = {
 
 const categories = [
   {
-    name: "Chatbots",
+    name: "Chatbot",
     emoji: "🤖",
-    description: "AI assistants for questions, conversations, research, and everyday tasks.",
+    description:
+      "AI assistants for questions, conversations, research, and everyday tasks.",
   },
   {
     name: "Writing",
     emoji: "✍️",
-    description: "AI tools for writing, rewriting, grammar, and content creation.",
+    description:
+      "AI tools for writing, rewriting, grammar, translation, and content creation.",
   },
   {
     name: "Design",
     emoji: "🎨",
-    description: "AI tools for graphics, images, presentations, and creative design.",
+    description:
+      "AI tools for graphics, images, presentations, and creative design.",
   },
   {
     name: "Coding",
     emoji: "💻",
-    description: "AI tools that help developers write, understand, and improve code.",
+    description:
+      "AI tools that help developers write, understand, and improve code.",
   },
   {
     name: "Video",
     emoji: "🎬",
-    description: "AI tools for video creation, editing, subtitles, and creative content.",
+    description:
+      "AI tools for video creation, editing, subtitles, and creative content.",
   },
   {
     name: "Research",
     emoji: "🔎",
-    description: "AI tools for research, information discovery, and knowledge work.",
+    description:
+      "AI tools for research, information discovery, and knowledge work.",
   },
   {
     name: "Education",
     emoji: "📚",
-    description: "AI tools for students, teachers, learning, and study assistance.",
+    description:
+      "AI tools for students, teachers, learning, and study assistance.",
   },
   {
     name: "Productivity",
     emoji: "📈",
-    description: "AI tools that help save time, organize work, and improve productivity.",
+    description:
+      "AI tools that help save time, organize work, and improve productivity.",
   },
 ];
 
@@ -58,7 +66,7 @@ export default function CategoriesPage() {
             PakAIHub
           </a>
 
-          <div className="flex items-center gap-6 text-sm text-slate-300">
+          <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
             <a href="/" className="hover:text-white">
               Home
             </a>
@@ -79,13 +87,20 @@ export default function CategoriesPage() {
               Contact
             </a>
           </div>
+
+          <a
+            href="/"
+            className="rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 hover:border-blue-500 hover:text-white md:hidden"
+          >
+            Home
+          </a>
         </div>
       </nav>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="text-center">
           <p className="mb-3 text-sm font-medium text-blue-400">
-            PakAIHub
+            Pakistan&apos;s AI Hub
           </p>
 
           <h1 className="text-4xl font-bold md:text-5xl">
@@ -102,12 +117,12 @@ export default function CategoriesPage() {
           {categories.map((category) => (
             <a
               key={category.name}
-              href="/ai-tools"
-              className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-blue-500"
+              href={`/ai-tools?category=${encodeURIComponent(category.name)}`}
+              className="group rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-blue-500"
             >
               <div className="text-4xl">{category.emoji}</div>
 
-              <h2 className="mt-5 text-xl font-bold">
+              <h2 className="mt-5 text-xl font-bold group-hover:text-blue-400">
                 {category.name}
               </h2>
 

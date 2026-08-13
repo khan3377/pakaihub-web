@@ -9,28 +9,28 @@ const tools = [
     description:
       "AI assistant for writing, learning, coding, brainstorming, and everyday tasks.",
     category: "Chatbot",
-    link: "https://chatgpt.com",
+    link: "/ai-tools/chatgpt",
   },
   {
     name: "Google Gemini",
     description:
       "AI assistant for research, writing, ideas, productivity, and everyday questions.",
     category: "Chatbot",
-    link: "https://gemini.google.com",
+    link: "/ai-tools/gemini",
   },
   {
     name: "Claude",
     description:
       "AI assistant for writing, analysis, research, coding, and problem solving.",
     category: "Chatbot",
-    link: "https://claude.ai",
+    link: "/ai-tools/claude",
   },
   {
     name: "Microsoft Copilot",
     description:
       "AI assistant for answers, writing, productivity, research, and creative tasks.",
     category: "Chatbot",
-    link: "https://copilot.microsoft.com",
+    link: "/ai-tools/copilot",
   },
   {
     name: "Perplexity",
@@ -44,7 +44,7 @@ const tools = [
     description:
       "Create presentations, social posts, graphics, documents, and visual content with AI.",
     category: "Design",
-    link: "https://www.canva.com",
+    link: "/ai-tools/canva",
   },
   {
     name: "Leonardo AI",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
 import type { Metadata } from "next";
 import { useSearchParams } from "next/navigation";
 const tools = [
@@ -158,7 +158,7 @@ const categories = [
   "Productivity",
 ];
 
-export default function AIToolsPage() {
+function AIToolsContent() {
   const [search, setSearch] = useState("");
  
 const searchParams = useSearchParams();
@@ -332,5 +332,12 @@ const filteredTools = useMemo(() => {
         © 2026 PakAIHub. All rights reserved.
       </footer>
     </main>
+  );
+}
+export default function AIToolsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-slate-950" />}>
+      <AIToolsContent />
+    </Suspense>
   );
 }

@@ -12,7 +12,7 @@ const tools = [
     description: "AI assistant for writing, coding and learning.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-green-400",
-    link: "https://chatgpt.com",
+    link: "/ai-tools/chatgpt",
     category: "Chatbot",
   },
   {
@@ -21,8 +21,8 @@ const tools = [
     description: "Google AI assistant for search and productivity.",
     rating: "⭐⭐⭐⭐☆",
     color: "text-blue-400",
-    link: "https://gemini.google.com",
-    category: "Search",
+    link: "/ai-tools/gemini",
+    category: "Chatbot",
   },
   {
     logo: "🎨",
@@ -30,7 +30,7 @@ const tools = [
     description: "Create beautiful designs and graphics with AI.",
     rating: "⭐⭐⭐⭐☆",
     color: "text-pink-400",
-    link: "https://www.canva.com/ai-image-generator/",
+    link: "/ai-tools/canva",
     category: "Design",
   },
   {
@@ -39,7 +39,7 @@ const tools = [
     description: "AI writing assistant for grammar, spelling and clarity.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-green-400",
-    link: "https://www.grammarly.com",
+    link: "/ai-tools/grammarly",
     category: "Writing",
   },
   {
@@ -48,7 +48,7 @@ const tools = [
     description: "AI writing and paraphrasing assistant.",
     rating: "⭐⭐⭐⭐☆",
     color: "text-blue-400",
-    link: "https://quillbot.com",
+    link: "/ai-tools/quillbot",
     category: "Writing",
   },
   {
@@ -57,7 +57,7 @@ const tools = [
     description: "AI coding assistant that helps developers write code.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-purple-400",
-    link: "https://github.com/features/copilot",
+    link: "/ai-tools/github-copilot",
     category: "Coding",
   },
   {
@@ -66,17 +66,8 @@ const tools = [
     description: "Create and edit videos with generative AI.",
     rating: "⭐⭐⭐⭐☆",
     color: "text-red-400",
-    link: "https://runwayml.com",
+    link: "/ai-tools/runway",
     category: "Video",
-  },
-  {
-    logo: "🎵",
-    title: "Suno",
-    description: "Create songs and music using AI.",
-    rating: "⭐⭐⭐⭐⭐",
-    color: "text-yellow-400",
-    link: "https://suno.com",
-    category: "Audio",
   },
   {
     logo: "🖼️",
@@ -84,7 +75,7 @@ const tools = [
     description: "Generate creative images and designs with AI.",
     rating: "⭐⭐⭐⭐☆",
     color: "text-orange-400",
-    link: "https://firefly.adobe.com",
+    link: "/ai-tools/firefly",
     category: "Design",
   },
   {
@@ -93,7 +84,7 @@ const tools = [
     description: "Create realistic AI voices and audio.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-cyan-400",
-    link: "https://elevenlabs.io",
+    link: "/ai-tools/elevenlabs",
     category: "Audio",
   },
   {
@@ -102,7 +93,7 @@ const tools = [
     description: "AI-powered search and research assistant.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-indigo-400",
-    link: "https://www.perplexity.ai",
+    link: "/ai-tools/perplexity",
     category: "Search",
   },
   {
@@ -111,7 +102,7 @@ const tools = [
     description: "AI assistant for writing, analysis and coding.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-orange-300",
-    link: "https://claude.ai",
+    link: "/ai-tools/claude",
     category: "Chatbot",
   },
   {
@@ -120,7 +111,7 @@ const tools = [
     description: "AI-powered video editing and creative tools.",
     rating: "⭐⭐⭐⭐☆",
     color: "text-white",
-    link: "https://www.capcut.com",
+    link: "/ai-tools/capcut",
     category: "Video",
   },
   {
@@ -129,7 +120,7 @@ const tools = [
     description: "Create AI-generated images and visual content.",
     rating: "⭐⭐⭐⭐⭐",
     color: "text-violet-400",
-    link: "https://leonardo.ai",
+    link: "/ai-tools/leonardo",
     category: "Design",
   },
 ];

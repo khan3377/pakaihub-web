@@ -367,7 +367,6 @@ const tools = [
   className="mx-auto max-w-6xl px-6 py-20"
 >
   <div className="text-center">
-
     <h2 className="text-4xl font-bold">
       AI <span className="text-blue-400">Blog</span>
     </h2>
@@ -375,13 +374,12 @@ const tools = [
     <p className="mx-auto mt-4 max-w-2xl text-gray-400">
       Learn about AI tools, productivity, freelancing and the future of AI.
     </p>
-
   </div>
 
   <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
 
+    {/* Students */}
     <article className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-blue-500">
-
       <div className="text-4xl">🤖</div>
 
       <h3 className="mt-5 text-xl font-bold">
@@ -393,14 +391,16 @@ const tools = [
         write better and save time.
       </p>
 
-      <button className="mt-5 font-semibold text-blue-400 hover:text-blue-300">
+      <a
+        href="/blog/best-ai-tools-for-students"
+        className="mt-5 inline-block font-semibold text-blue-400 hover:text-blue-300"
+      >
         Read More →
-      </button>
-
+      </a>
     </article>
 
+    {/* Freelancers */}
     <article className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-blue-500">
-
       <div className="text-4xl">💼</div>
 
       <h3 className="mt-5 text-xl font-bold">
@@ -412,29 +412,33 @@ const tools = [
         productivity and grow their online work.
       </p>
 
-      <button className="mt-5 font-semibold text-blue-400 hover:text-blue-300">
+      <a
+        href="/blog/best-ai-tools-for-freelancers"
+        className="mt-5 inline-block font-semibold text-blue-400 hover:text-blue-300"
+      >
         Read More →
-      </button>
-
+      </a>
     </article>
 
+    {/* Content Creators */}
     <article className="rounded-2xl border border-slate-800 bg-slate-900 p-6 transition hover:-translate-y-1 hover:border-blue-500">
-
       <div className="text-4xl">🚀</div>
 
       <h3 className="mt-5 text-xl font-bold">
-        The Future of AI
+        Best AI Tools for Content Creators
       </h3>
 
       <p className="mt-3 text-gray-400">
-        Learn how artificial intelligence is changing
-        business, education and everyday life.
+        Find AI tools for writing, image creation, video editing,
+        and other content creation tasks.
       </p>
 
-      <button className="mt-5 font-semibold text-blue-400 hover:text-blue-300">
+      <a
+        href="/blog/best-ai-tools-for-content-creators"
+        className="mt-5 inline-block font-semibold text-blue-400 hover:text-blue-300"
+      >
         Read More →
-      </button>
-
+      </a>
     </article>
 
   </div>

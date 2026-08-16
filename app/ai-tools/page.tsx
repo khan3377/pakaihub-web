@@ -145,6 +145,76 @@ const tools = [
     category: "Productivity",
     link: "/ai-tools/gamma",
   },
+  {
+    name: "DeepSeek",
+    description:
+      "AI assistant for research, reasoning, writing, coding, and everyday questions.",
+    category: "Chatbot",
+    link: "/ai-tools/deepseek",
+  },
+  {
+    name: "Mistral AI",
+    description:
+      "AI assistant for writing, research, coding, analysis, and productivity.",
+    category: "Chatbot",
+    link: "/ai-tools/mistral",
+  },
+  {
+    name: "Ideogram",
+    description:
+      "AI image generation tool for creating designs, graphics, posters, and creative visuals.",
+    category: "Design",
+    link: "/ai-tools/ideogram",
+  },
+  {
+    name: "Pika",
+    description:
+      "AI video creation tool for generating and transforming creative videos.",
+    category: "Video",
+    link: "/ai-tools/pika",
+  },
+  {
+    name: "Descript",
+    description:
+      "AI-powered tool for editing videos, audio, podcasts, and transcripts.",
+    category: "Video",
+    link: "/ai-tools/descript",
+  },
+  {
+    name: "Suno",
+    description:
+      "AI music creation tool for generating songs and audio from text prompts.",
+    category: "Audio",
+    link: "/ai-tools/suno",
+  },
+  {
+    name: "Jasper",
+    description:
+      "AI writing platform for creating marketing content, blog posts, and business copy.",
+    category: "Writing",
+    link: "/ai-tools/jasper",
+  },
+  {
+    name: "Photoroom",
+    description:
+      "AI photo editing tool for removing backgrounds, creating product images, and improving photos.",
+    category: "Design",
+    link: "/ai-tools/photoroom",
+  },
+  {
+    name: "Windsurf",
+    description:
+      "AI-powered coding environment that helps developers write, understand, and improve code.",
+    category: "Coding",
+    link: "/ai-tools/windsurf",
+  },
+  {
+    name: "Blackbox AI",
+    description:
+      "AI coding assistant for generating, explaining, debugging, and working with code.",
+    category: "Coding",
+    link: "/ai-tools/blackbox-ai",
+  },
 ];
 
 const categories = [

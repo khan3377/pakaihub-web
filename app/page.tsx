@@ -512,7 +512,7 @@ const tools = [
 
   </div>
 </section>
-     {/* Footer */}
+{/* Footer */}
 <footer className="border-t border-slate-800 bg-slate-950">
   <div className="mx-auto max-w-6xl px-6 py-12">
 
@@ -525,8 +525,7 @@ const tools = [
         </h3>
 
         <p className="mt-3 max-w-sm text-gray-400">
-         
-         Pakistan's AI Hub. Discover useful AI tools
+          Pakistan&apos;s AI Hub. Discover useful AI tools
           for students, freelancers, businesses and creators.
         </p>
       </div>
@@ -538,7 +537,6 @@ const tools = [
         </h4>
 
         <div className="mt-4 flex flex-col gap-3">
-
           <a
             href="#"
             className="text-gray-400 hover:text-blue-400"
@@ -573,7 +571,6 @@ const tools = [
           >
             Contact
           </a>
-
         </div>
       </div>
 
@@ -584,50 +581,47 @@ const tools = [
         </h4>
 
         <p className="mt-4 text-gray-400">
-          Helping Pakistan discover the best AI tools
+          Helping Pakistan discover useful AI tools
           in one simple place.
         </p>
 
-        <div className="mt-5 flex gap-3">
-          <span className="rounded-full bg-slate-800 px-3 py-2">
-           Pakistan's AI Hub
-          </span>
-
-          <span className="rounded-full bg-slate-800 px-3 py-2">
-            🤖 AI
-          </span>
-        </div>
+        <a
+          href="/about"
+          className="mt-5 inline-block text-gray-400 hover:text-blue-400"
+        >
+          Learn More →
+        </a>
       </div>
 
     </div>
 
     {/* Bottom */}
-<div className="mt-10 border-t border-slate-800 pt-6 text-center text-sm text-gray-500">
-  <p>© 2026 PakAIHub. All rights reserved.</p>
+    <div className="mt-10 border-t border-slate-800 pt-6 text-center text-sm text-gray-500">
+      <p>© 2026 PakAIHub. All rights reserved.</p>
 
-  <div className="mt-3 flex justify-center gap-5">
-    <a
-      href="/privacy"
-      className="text-gray-400 hover:text-blue-400"
-    >
-      Privacy Policy
-    </a>
+      <div className="mt-3 flex justify-center gap-5">
+        <a
+          href="/privacy"
+          className="text-gray-400 hover:text-blue-400"
+        >
+          Privacy Policy
+        </a>
 
-    <a
-      href="/terms"
-      className="text-gray-400 hover:text-blue-400"
-    >
-      Terms & Conditions
-    </a>
+        <a
+          href="/terms"
+          className="text-gray-400 hover:text-blue-400"
+        >
+          Terms &amp; Conditions
+        </a>
 
-    <a
-      href="/contact"
-      className="text-gray-400 hover:text-blue-400"
-    >
-      Contact Us
-    </a>
-  </div>
-</div>
+        <a
+          href="/contact"
+          className="text-gray-400 hover:text-blue-400"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
 
   </div>
 </footer>

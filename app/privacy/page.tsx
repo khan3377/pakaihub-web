@@ -99,10 +99,34 @@ export default function PrivacyPolicy() {
             </h2>
 
             <p className="mt-3 leading-7">
-              PakAIHub may display advertisements from third-party advertising
-              services. These services may use cookies or similar technologies
-              to provide advertisements and measure advertising performance.
+              PakAIHub may display advertisements from third-party
+              advertising services, including Google AdSense. These services
+              may use cookies and similar technologies to collect information
+              about visitors in order to provide, personalize, and measure
+              advertisements.
             </p>
+
+            <p className="mt-3 leading-7">
+              Google may use cookies to serve ads based on a user&apos;s
+              previous visits to this website or other websites. Users may
+              manage or opt out of personalized advertising by visiting
+              Google&apos;s Ads Settings.
+            </p>
+
+            <p className="mt-3 leading-7">
+              Advertising providers may have their own privacy policies and
+              terms. Visitors should review the relevant third-party policies
+              for more information about how advertising data is handled.
+            </p>
+
+            <a
+              href="https://adssettings.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-blue-400 hover:text-blue-300"
+            >
+              Google Ads Settings →
+            </a>
           </section>
 
           <section>

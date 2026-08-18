@@ -1,8 +1,9 @@
 "use client";
 
 import { Suspense, useMemo, useState } from "react";
-import type { Metadata } from "next";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+
 const tools = [
   {
     name: "ChatGPT",
@@ -37,7 +38,7 @@ const tools = [
     description:
       "AI-powered search and research assistant for finding and understanding information.",
     category: "Research",
-    link: "https://www.perplexity.ai",
+    link: "/ai-tools/perplexity",
   },
   {
     name: "Canva",
@@ -51,98 +52,98 @@ const tools = [
     description:
       "Create AI-generated images, artwork, designs, and visual content.",
     category: "Design",
-    link: "https://leonardo.ai",
+    link: "/ai-tools/leonardo",
   },
   {
     name: "Adobe Firefly",
     description:
       "Generate and edit creative images and designs with Adobe generative AI.",
     category: "Design",
-    link: "https://firefly.adobe.com",
+    link: "/ai-tools/firefly",
   },
   {
     name: "CapCut",
     description:
       "AI-powered video editing tools for creators, social media, and short-form videos.",
     category: "Video",
-    link: "https://www.capcut.com",
+    link: "/ai-tools/capcut",
   },
   {
     name: "Runway",
     description:
       "AI-powered tools for generating and editing videos and creative media.",
     category: "Video",
-    link: "https://runwayml.com",
+    link: "/ai-tools/runway",
   },
   {
     name: "ElevenLabs",
     description:
       "Create realistic AI voices, voiceovers, and audio content.",
     category: "Audio",
-    link: "https://elevenlabs.io",
+    link: "/ai-tools/elevenlabs",
   },
   {
     name: "Grammarly",
     description:
       "AI writing assistant for grammar, clarity, rewriting, and professional communication.",
     category: "Writing",
-    link: "https://www.grammarly.com",
+    link: "/ai-tools/grammarly",
   },
   {
     name: "QuillBot",
     description:
       "AI writing and paraphrasing tools for rewriting, summarizing, and improving text.",
     category: "Writing",
-    link: "https://quillbot.com",
+    link: "/ai-tools/quillbot",
   },
   {
     name: "DeepL",
     description:
       "AI-powered translation and writing assistance for natural multilingual communication.",
     category: "Writing",
-    link: "https://www.deepl.com",
+    link: "/ai-tools/deepl",
   },
   {
     name: "GitHub Copilot",
     description:
       "AI coding assistant that helps developers write, understand, and improve code.",
     category: "Coding",
-    link: "https://github.com/features/copilot",
+    link: "/ai-tools/github-copilot",
   },
   {
     name: "Cursor",
     description:
       "AI-powered code editor designed to help developers write and understand code faster.",
     category: "Coding",
-    link: "https://cursor.com",
+    link: "/ai-tools/cursor",
   },
   {
     name: "Replit",
     description:
       "Online development platform with AI tools for building and coding applications.",
     category: "Coding",
-    link: "https://replit.com",
+    link: "/ai-tools/replit",
   },
   {
     name: "Notion AI",
     description:
       "AI workspace tools for writing, summarizing, organizing, and managing information.",
     category: "Productivity",
-    link: "https://www.notion.com/product/ai",
+    link: "/ai-tools/notion-ai",
   },
   {
     name: "Otter.ai",
     description:
       "AI meeting assistant for transcription, notes, summaries, and conversations.",
     category: "Productivity",
-    link: "https://otter.ai",
+    link: "/ai-tools/otter-ai",
   },
   {
     name: "Gamma",
     description:
       "Create presentations, documents, and visual content with AI.",
     category: "Productivity",
-    link: "https://gamma.app",
+    link: "/ai-tools/gamma",
   },
 ];
 
@@ -160,11 +161,12 @@ const categories = [
 
 function AIToolsContent() {
   const [search, setSearch] = useState("");
- 
-const searchParams = useSearchParams();
-const categoryFromUrl = searchParams.get("category") || "All";
- const [selectedCategory, setSelectedCategory] = useState(categoryFromUrl);
-const filteredTools = useMemo(() => {
+  const searchParams = useSearchParams();
+  const categoryFromUrl = searchParams.get("category") || "All";
+  const [selectedCategory, setSelectedCategory] =
+    useState(categoryFromUrl);
+
+  const filteredTools = useMemo(() => {
     const searchText = search.trim().toLowerCase();
 
     return tools.filter((tool) => {
@@ -175,7 +177,8 @@ const filteredTools = useMemo(() => {
         tool.category.toLowerCase().includes(searchText);
 
       const matchesCategory =
-        selectedCategory === "All" || tool.category === selectedCategory;
+        selectedCategory === "All" ||
+        tool.category === selectedCategory;
 
       return matchesSearch && matchesCategory;
     });
@@ -185,38 +188,44 @@ const filteredTools = useMemo(() => {
     <main className="min-h-screen bg-slate-950 text-white">
       <nav className="border-b border-slate-800 px-6 py-4">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <a href="/" className="text-2xl font-bold text-blue-400">
+          <Link
+            href="/"
+            className="text-2xl font-bold text-blue-400"
+          >
             PakAIHub
-          </a>
+          </Link>
 
           <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-            <a href="/" className="hover:text-white">
+            <Link href="/" className="hover:text-white">
               Home
-            </a>
+            </Link>
 
-            <a href="/ai-tools" className="text-blue-400">
+            <Link
+              href="/ai-tools"
+              className="text-blue-400"
+            >
               AI Tools
-            </a>
+            </Link>
 
-            <a href="/categories" className="hover:text-white">
+            <Link href="/categories" className="hover:text-white">
               Categories
-            </a>
+            </Link>
 
-            <a href="/blog" className="hover:text-white">
+            <Link href="/blog" className="hover:text-white">
               Blog
-            </a>
+            </Link>
 
-            <a href="/contact" className="hover:text-white">
+            <Link href="/contact" className="hover:text-white">
               Contact
-            </a>
+            </Link>
           </div>
 
-          <a
+          <Link
             href="/"
             className="rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 hover:border-blue-500 hover:text-white md:hidden"
           >
             Home
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -231,8 +240,8 @@ const filteredTools = useMemo(() => {
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-400">
-            Discover useful AI tools for students, freelancers, businesses,
-            developers, and creators.
+            Discover useful AI tools for students, freelancers,
+            businesses, developers, and creators.
           </p>
         </div>
 
@@ -293,14 +302,12 @@ const filteredTools = useMemo(() => {
                   {tool.description}
                 </p>
 
-                <a
+                <Link
                   href={tool.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="mt-6 inline-block rounded-lg bg-blue-600 px-5 py-2.5 text-center font-semibold text-white transition hover:bg-blue-700"
                 >
                   Visit Tool →
-                </a>
+                </Link>
               </article>
             ))}
           </div>
@@ -334,9 +341,14 @@ const filteredTools = useMemo(() => {
     </main>
   );
 }
+
 export default function AIToolsPage() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-slate-950" />}>
+    <Suspense
+      fallback={
+        <div className="min-h-screen bg-slate-950" />
+      }
+    >
       <AIToolsContent />
     </Suspense>
   );

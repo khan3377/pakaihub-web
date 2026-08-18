@@ -54,6 +54,13 @@ const tools = [
     category: "Design",
     link: "/ai-tools/leonardo",
   },
+    {
+    name: "Midjourney",
+    description:
+      "AI image generation tool for creating artwork, designs, concepts, and creative visual content.",
+    category: "Design",
+    link: "/ai-tools/midjourney",
+  },
   {
     name: "Adobe Firefly",
     description:

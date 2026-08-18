@@ -1,87 +1,34 @@
 import type { Metadata } from "next";
+import AIToolDetail from "../../components/AIToolDetail";
 
 export const metadata: Metadata = {
-  title: "ElevenLabs",
+  title: "ElevenLabs | PakAIHub",
   description:
     "Learn about ElevenLabs, an AI platform for realistic voice generation, voiceovers, and audio content.",
 };
 
 export default function ElevenLabsPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <nav className="border-b border-slate-800 px-6 py-4">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <a href="/" className="text-2xl font-bold text-blue-400">
-            PakAIHub
-          </a>
-
-          <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-            <a href="/" className="hover:text-white">
-              Home
-            </a>
-
-            <a href="/ai-tools" className="text-blue-400">
-              AI Tools
-            </a>
-
-            <a href="/categories" className="hover:text-white">
-              Categories
-            </a>
-
-            <a href="/blog" className="hover:text-white">
-              Blog
-            </a>
-
-            <a href="/contact" className="hover:text-white">
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8 md:p-12">
-          <span className="rounded-full bg-slate-800 px-3 py-1 text-sm text-blue-400">
-            Audio
-          </span>
-
-          <h1 className="mt-6 text-4xl font-bold md:text-5xl">
-            ElevenLabs
-          </h1>
-
-          <p className="mt-6 text-lg leading-8 text-slate-400">
-            ElevenLabs is an AI platform for creating realistic voices,
-            voiceovers, narration, and other audio content.
-          </p>
-
-          <a
-            href="https://elevenlabs.io"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
-          >
-            Visit ElevenLabs →
-          </a>
-
-          <div className="mt-12 border-t border-slate-800 pt-8">
-            <h2 className="text-2xl font-bold">
-              What can ElevenLabs help with?
-            </h2>
-
-            <ul className="mt-5 space-y-3 text-slate-400">
-              <li>• AI voice generation</li>
-              <li>• Voiceovers and narration</li>
-              <li>• Audio content creation</li>
-              <li>• Text-to-speech</li>
-              <li>• Creative audio projects</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
-        © 2026 PakAIHub. All rights reserved.
-      </footer>
-    </main>
+    <AIToolDetail
+      name="ElevenLabs"
+      category="Audio"
+      description="ElevenLabs is an AI platform for creating realistic voices, voiceovers, narration, and other audio content."
+      officialUrl="https://elevenlabs.io"
+      features={[
+        "AI voice generation",
+        "Voiceovers and narration",
+        "Audio content creation",
+        "Text-to-speech",
+        "Creative audio projects",
+      ]}
+      overview="ElevenLabs is an AI audio platform that helps users create realistic voices, voiceovers, narration, and other audio content. It can be useful for producing spoken content, experimenting with AI voices, and creating audio for different creative projects."
+      bestFor={[
+        "Content creators producing voiceovers and narrated content",
+        "Video creators adding AI-generated narration to videos",
+        "Freelancers creating audio and voice projects",
+        "Developers exploring AI voice and text-to-speech tools",
+        "Creative professionals working with audio content",
+      ]}
+    />
   );
 }

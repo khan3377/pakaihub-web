@@ -1,87 +1,34 @@
 import type { Metadata } from "next";
+import AIToolDetail from "../../components/AIToolDetail";
 
 export const metadata: Metadata = {
-  title: "Claude",
+  title: "Claude | PakAIHub",
   description:
-    "Learn about Claude, an AI assistant for writing, analysis, research, and coding.",
+    "Learn about Claude, an AI assistant for writing, analysis, research, coding, brainstorming, and everyday tasks.",
 };
 
 export default function ClaudePage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <nav className="border-b border-slate-800 px-6 py-4">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <a href="/" className="text-2xl font-bold text-blue-400">
-            PakAIHub
-          </a>
-
-          <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-            <a href="/" className="hover:text-white">
-              Home
-            </a>
-
-            <a href="/ai-tools" className="text-blue-400">
-              AI Tools
-            </a>
-
-            <a href="/categories" className="hover:text-white">
-              Categories
-            </a>
-
-            <a href="/blog" className="hover:text-white">
-              Blog
-            </a>
-
-            <a href="/contact" className="hover:text-white">
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8 md:p-12">
-          <span className="rounded-full bg-slate-800 px-3 py-1 text-sm text-blue-400">
-            Chatbot
-          </span>
-
-          <h1 className="mt-6 text-4xl font-bold md:text-5xl">
-            Claude
-          </h1>
-
-          <p className="mt-6 text-lg leading-8 text-slate-400">
-            Claude is an AI assistant for writing, analysis, research, coding,
-            brainstorming, and everyday tasks.
-          </p>
-
-          <a
-            href="https://claude.ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
-          >
-            Visit Claude →
-          </a>
-
-          <div className="mt-12 border-t border-slate-800 pt-8">
-            <h2 className="text-2xl font-bold">
-              What can Claude help with?
-            </h2>
-
-            <ul className="mt-5 space-y-3 text-slate-400">
-              <li>• Writing and editing</li>
-              <li>• Research and analysis</li>
-              <li>• Coding and programming</li>
-              <li>• Brainstorming and ideas</li>
-              <li>• Everyday questions and tasks</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
-        © 2026 PakAIHub. All rights reserved.
-      </footer>
-    </main>
+    <AIToolDetail
+      name="Claude"
+      category="Chatbot"
+      description="Claude is an AI assistant for writing, analysis, research, coding, brainstorming, and everyday tasks."
+      officialUrl="https://claude.ai/"
+      features={[
+        "Writing and editing",
+        "Research and analysis",
+        "Coding and programming",
+        "Brainstorming and ideas",
+        "Everyday questions and tasks",
+      ]}
+      overview="Claude is an AI assistant designed to help users with writing, analysis, research, coding, brainstorming, and everyday tasks. It can help users work with information, improve written content, explore ideas, understand technical topics, and solve different types of problems."
+      bestFor={[
+        "Students who want help with learning, research, and writing",
+        "Freelancers who need help with writing, analysis, and planning",
+        "Developers working through coding and technical problems",
+        "Content creators developing ideas and written content",
+        "Professionals who need help with analysis and everyday tasks",
+      ]}
+    />
   );
 }

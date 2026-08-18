@@ -43,12 +43,12 @@ const categories = [
     description:
       "AI tools for research, information discovery, and knowledge work.",
   },
-  {
-    name: "Education",
-    emoji: "📚",
-    description:
-      "AI tools for students, teachers, learning, and study assistance.",
-  },
+{
+  name: "Audio",
+  emoji: "🎵",
+  description:
+    "AI tools for music creation, voice generation, audio editing, and sound content.",
+},
   {
     name: "Productivity",
     emoji: "📈",

@@ -52,7 +52,7 @@ const tools = [
     description:
       "Create AI-generated images, artwork, designs, and visual content.",
     category: "Design",
-    link: "/ai-tools/leonardo",
+    link: "https://leonardo.ai",
   },
   {
     name: "Adobe Firefly",
@@ -143,7 +143,7 @@ const tools = [
     description:
       "Create presentations, documents, and visual content with AI.",
     category: "Productivity",
-    link: "/ai-tools/gamma",
+    link: "https://gamma.app",
   },
 ];
 

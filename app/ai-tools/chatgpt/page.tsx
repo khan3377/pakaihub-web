@@ -20,6 +20,16 @@ export default function ChatGPTPage() {
         "Research and brainstorming",
         "Everyday questions and tasks",
       ]}
+
+            overview="ChatGPT is a general-purpose AI assistant that can help with writing, learning, coding, research, brainstorming, and many everyday tasks. It can explain complex topics, help organize ideas, improve written content, and assist users with different types of creative and technical work."
+      bestFor={[
+        "Students who want help understanding topics and organizing ideas",
+        "Freelancers who need help with writing, planning, and research",
+        "Developers working through coding questions and technical problems",
+        "Content creators developing ideas, drafts, and outlines",
+        "Professionals who want help with everyday writing and productivity",
+      ]}
+
     />
   );
 }

@@ -1,87 +1,34 @@
 import type { Metadata } from "next";
+import AIToolDetail from "../../components/AIToolDetail";
 
 export const metadata: Metadata = {
-  title: "Canva AI",
+  title: "Canva AI | PakAIHub",
   description:
     "Learn about Canva AI, a creative AI tool for designs, presentations, images, and content creation.",
 };
 
 export default function CanvaPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <nav className="border-b border-slate-800 px-6 py-4">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <a href="/" className="text-2xl font-bold text-blue-400">
-            PakAIHub
-          </a>
-
-          <div className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-            <a href="/" className="hover:text-white">
-              Home
-            </a>
-
-            <a href="/ai-tools" className="text-blue-400">
-              AI Tools
-            </a>
-
-            <a href="/categories" className="hover:text-white">
-              Categories
-            </a>
-
-            <a href="/blog" className="hover:text-white">
-              Blog
-            </a>
-
-            <a href="/contact" className="hover:text-white">
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      <section className="mx-auto max-w-4xl px-6 py-16">
-        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8 md:p-12">
-          <span className="rounded-full bg-slate-800 px-3 py-1 text-sm text-blue-400">
-            Design
-          </span>
-
-          <h1 className="mt-6 text-4xl font-bold md:text-5xl">
-            Canva AI
-          </h1>
-
-          <p className="mt-6 text-lg leading-8 text-slate-400">
-            Canva AI helps you create designs, presentations, images, and
-            creative content with the help of artificial intelligence.
-          </p>
-
-          <a
-            href="https://www.canva.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
-          >
-            Visit Canva →
-          </a>
-
-          <div className="mt-12 border-t border-slate-800 pt-8">
-            <h2 className="text-2xl font-bold">
-              What can Canva AI help with?
-            </h2>
-
-            <ul className="mt-5 space-y-3 text-slate-400">
-              <li>• Graphic design</li>
-              <li>• Presentations</li>
-              <li>• AI image creation</li>
-              <li>• Social media content</li>
-              <li>• Creative ideas and designs</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
-        © 2026 PakAIHub. All rights reserved.
-      </footer>
-    </main>
+    <AIToolDetail
+      name="Canva AI"
+      category="Design"
+      description="Canva AI helps you create designs, presentations, images, and creative content with the help of artificial intelligence."
+      officialUrl="https://www.canva.com"
+      features={[
+        "Graphic design",
+        "Presentations",
+        "AI image creation",
+        "Social media content",
+        "Creative ideas and designs",
+      ]}
+      overview="Canva AI combines artificial intelligence with Canva's design tools to help users create visual content more easily. It can assist with designs, presentations, images, social media content, and creative projects, making it useful for both beginners and experienced creators."
+      bestFor={[
+        "Students creating presentations, projects, and visual assignments",
+        "Freelancers designing graphics and client content",
+        "Content creators making social media posts and visual content",
+        "Small businesses creating marketing materials and presentations",
+        "Anyone who wants to create professional-looking designs more easily",
+      ]}
+    />
   );
 }

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type ToolCardProps = {
   logo: string;
   title: string;
@@ -17,9 +19,10 @@ export default function ToolCard({
   link,
   category,
 }: ToolCardProps) {
+  const isInternalLink = link.startsWith("/");
+
   return (
     <div className="group w-full rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg transition duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-blue-500/10">
-
       {/* Top */}
       <div className="flex items-center justify-between">
         <div className="text-5xl">
@@ -47,16 +50,24 @@ export default function ToolCard({
           {rating}
         </span>
 
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-lg bg-blue-600 px-5 py-2 font-semibold transition hover:bg-blue-700"
-        >
-          Visit →
-        </a>
+        {isInternalLink ? (
+          <Link
+            href={link}
+            className="rounded-lg bg-blue-600 px-5 py-2 font-semibold transition hover:bg-blue-700"
+          >
+            Visit →
+          </Link>
+        ) : (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg bg-blue-600 px-5 py-2 font-semibold transition hover:bg-blue-700"
+          >
+            Visit →
+          </a>
+        )}
       </div>
-
     </div>
   );
 }

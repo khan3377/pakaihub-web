@@ -12,18 +12,42 @@ const posts = [
     description:
       "Discover useful AI tools that can help students with learning, research, writing, and productivity.",
     category: "Education",
+    link: "/blog/best-ai-tools-for-students",
   },
   {
     title: "Best AI Tools for Freelancers",
     description:
       "Explore AI tools that can help freelancers save time, create content, communicate with clients, and grow their work.",
     category: "Freelancing",
+    link: "/blog/best-ai-tools-for-freelancers",
   },
   {
     title: "Best AI Tools for Content Creators",
     description:
       "Find AI tools for writing, image creation, video editing, and other content creation tasks.",
     category: "Content Creation",
+    link: "/blog/best-ai-tools-for-content-creators",
+  },
+  {
+    title: "Best AI Tools for Businesses",
+    description:
+      "Discover useful AI tools that can help businesses improve productivity, marketing, customer support, and everyday work.",
+    category: "Business",
+    link: "/blog/best-ai-tools-for-businesses",
+  },
+  {
+    title: "Best AI Tools for Developers",
+    description:
+      "Explore AI tools that can help developers write code, debug problems, understand projects, and work faster.",
+    category: "Development",
+    link: "/blog/best-ai-tools-for-developers",
+  },
+  {
+    title: "Best AI Tools for Productivity",
+    description:
+      "Discover AI tools that can help you save time, organize work, write faster, and improve everyday productivity.",
+    category: "Productivity",
+    link: "/blog/best-ai-tools-for-productivity",
   },
 ];
 
@@ -94,12 +118,12 @@ export default function BlogPage() {
                 {post.description}
               </p>
 
-              <button
-                type="button"
-                className="mt-6 rounded-lg border border-slate-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-blue-500 hover:text-blue-400"
+              <a
+                href={post.link}
+                className="mt-6 inline-block rounded-lg border border-slate-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-blue-500 hover:text-blue-400"
               >
-                Coming Soon
-              </button>
+                Read Article →
+              </a>
             </article>
           ))}
         </div>
